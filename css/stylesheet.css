@@ -1,0 +1,102 @@
+/* General */
+.bg-blue {
+  background-color: #728dae;
+}
+
+.bg-green-light {
+  background-color: #e3edc2;
+}
+  .white {
+    color: #FFFFFF;
+  }
+
+  .blue {
+    color: #728dae;
+  }
+
+  .blue-btn {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    border-radius: 25px;
+    background-color: #728dae;
+    border-color: #728dae;
+  }
+
+  /* Header*/
+  #logo img {
+    width: 150px;
+  }
+
+  #blueSec {
+    background: #728dae;
+    z-index: 2202939949568687878878 !important;
+    position: relative;
+  }
+
+  #greenSec,
+  .div svg {
+    background: #e3edc2;
+  }
+
+  .contain svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .contain svg path {
+    fill: #728dae;
+  }
+  
+  .contain svg rect {
+    fill: #e3edc2;
+  }
+  
+  .contain {
+    position: relative;
+    top: calc( var(--divider-height)/2 * -1 );
+  
+    height: var(--divider-height);
+    width: 100%;
+      /* alternatively, could get rid of the rect, and move the svg container further down */
+    z-index: 1;
+  }
+
+/* Discount section */
+@media (min-width: 768px) { 
+  #discount-section {
+    padding-left: 0!important;
+    margin-left: 0!important;
+  }
+
+  #promo-section {
+    padding-right: 0!important;
+    margin-right: 0!important;
+  }
+ }
+
+/* How to order section */
+
+#how-to-order {
+  height: 500px;
+}
+
+.numbers {
+  background-color: #FFFFFF;
+  padding: 15px;
+  border-radius: 50%;; 
+}
+
+/* Voucher section */
+#voucher {
+  background-image: url("../images/Vegetables.png");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+}
+
+#voucher .container {
+  margin: auto;;
+}
