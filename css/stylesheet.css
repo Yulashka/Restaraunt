@@ -14,12 +14,22 @@
     color: #728dae;
   }
 
+  .green_light {
+    color: #e3edc2;
+  }
+
   .blue-btn {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
     border-radius: 25px;
     background-color: #728dae;
     border-color: #728dae;
+  }
+
+  .list-none {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
 
   /* Header*/
@@ -99,4 +109,9 @@
 
 #voucher .container {
   margin: auto;;
+}
+
+/* Quotes */
+.bi-quote {
+  font-size: 50px;
 }
