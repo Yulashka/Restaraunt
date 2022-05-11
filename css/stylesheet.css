@@ -36,6 +36,55 @@
     text-decoration: none;
   }
 
+  .link-style {
+    background-image: linear-gradient(
+      to right,
+      #e3edc2,
+      #e3edc2 50%,
+      #FFFFFF 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .link-style:before {
+    content: '';
+    background: #e3edc2;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .link-style:hover {
+   background-position: 0;
+  }
+  
+  .link-style:hover::before {
+    width:100%;
+  }
+
+  .e-pt-8 {
+    padding-top: 8rem;
+  }
+
+  body {
+    position: relative;
+  }
+
+ .active {
+    -webkit-text-fill-color: #e3edc2;;
+  }
+
   /* Header*/
   #logo img {
     width: 150px;
@@ -75,25 +124,12 @@
     z-index: 1;
   }
 
-/* Discount section */
-@media (min-width: 768px) { 
-  #discount-section {
-    padding-left: 0!important;
-    margin-left: 0!important;
+  .navbar {
+    background-color: rgb(114, 141, 174, 0.6);
+    font-weight: 900;
   }
-
-  #promo-section {
-    padding-right: 0!important;
-    margin-right: 0!important;
-  }
- }
 
 /* How to order section */
-
-#how-to-order {
-  height: 500px;
-}
-
 .numbers {
   background-color: #FFFFFF;
   padding: 15px;
@@ -120,40 +156,45 @@
   font-size: 50px;
 }
 
-/* Footer */
-#footer a {
-  background-image: linear-gradient(
-    to right,
-    #e3edc2,
-    #e3edc2 50%,
-    #FFFFFF 50%
-  );
-  background-size: 200% 100%;
-  background-position: -100%;
-  display: inline-block;
-  padding: 5px 0;
-  position: relative;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out;
+/* Media queries */
+@media (max-width: 768px) { 
+  .mt-xs-30 {
+    margin-top: 30px;
+  }
+  .mb-xs-30 {
+    margin-bottom: 30px;
+  }
+  #promo .mt-5,
+  #promo-section .mt-5 {
+    margin-top: 30px !important;
+  }
+  .hidden-sm {
+    display: none;
+  }
+  .visible-sm {
+    display: block;
+  }
+  .px-sm-00 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
-#footer a:before {
-  content: '';
-  background: #e3edc2;
-  display: block;
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  height: 3px;
-  transition: all 0.3s ease-in-out;
+@media (min-width: 768px) { 
+  .hidden-md {
+    display: none;
+  }
 }
 
-#footer a:hover {
- background-position: 0;
-}
+/* Discount section */
+@media (min-width: 768px) { 
+  #promo {
+    padding-left: 0!important;
+    margin-left: 0!important;
+  }
 
-#footer a:hover::before {
-  width:100%;
+  #promo-section {
+    padding-right: 0!important;
+    margin-right: 0!important;
+  }
 }
